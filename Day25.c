@@ -14,8 +14,10 @@ struct Node {
 struct Node* createList(int n) {
     struct Node *head = NULL, *temp = NULL, *newNode = NULL;
 
+    printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
         int value;
+        printf("Element %d: ", i + 1);
         scanf("%d", &value);
 
         newNode = (struct Node*)malloc(sizeof(struct Node));
