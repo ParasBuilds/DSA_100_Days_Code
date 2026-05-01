@@ -31,9 +31,9 @@ int main(void) {
 		return 0;
 	}
 
+	long long boards[100000];
 	long long sum = 0;
 	long long max_board = 0;
-	long long boards[100000];
 
 	for (int i = 0; i < n; ++i) {
 		long long len = 0;
